@@ -23,5 +23,6 @@ public class BitOperatorDemo2 {
 		 *       11111111_11111111_11111111_11111110  (-2µÄ²¹Âë)
 		 */
 		System.out.println(-16 >> 3); // -2
+		System.out.println(-16 << 3); // -128 ×óÒÆ   
 	}
 }
