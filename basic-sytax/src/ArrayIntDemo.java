@@ -16,6 +16,8 @@ public class ArrayIntDemo {
 		int[] nums = new int[]{1,2,3,4,5};
 		//System.out.println(nums.length);
 		
+		String[] nums2 = null;
+		// System.out.println(nums2.length); // 这是会报错的，空指针了
 		for (int i = 0;i < nums.length;i++){
 			System.out.println(nums[i]);
 		}
