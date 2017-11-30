@@ -1,7 +1,7 @@
 // 学生缴费案例
 class Student {
-	String name; // 学生名称
-	boolean isFee = false; // 默认未缴费
+	String name; // 学生名称,成员变量
+	boolean isFee = false; // 默认未缴费，成员变量
 	
 	void fees() {
 		isFee = true;
