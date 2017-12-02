@@ -54,7 +54,7 @@ public class PointDemo {
 		Circle c = new Circle(5);
 		
 		// еп╤о
-		int ret = c.judge(p);
+		int ret = c.judge(p);	
 		
 		System.out.println(ret);
 	}
