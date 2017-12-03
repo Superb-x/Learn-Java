@@ -1,7 +1,7 @@
 package demo;
 // 组合关系
 class Combine {
-	private ArraysUtil util = new ArraysUtil(); // 使用组合关系实现代码复用
+	private ArraysUtil util = new ArraysUtil(); // 使用组合关系实现代码复用 
 	
 	public void test(){
 		int[] arr = new int[]{-2,1,9,0,5};
