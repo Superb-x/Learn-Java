@@ -16,7 +16,7 @@ public class CacheDemo {
 		Integer i11 = new Integer(250);
 		Integer i22 = new Integer(250);
 		System.out.println(i11 == i22);
-		Integer i33 = Integer.valueOf(250);
+		Integer i33 = Integer.valueOf(250); // 250不在[-128, 127)范围内，所以会重新new一个Integer
 		Integer i44 = Integer.valueOf(250);
 		System.out.println(i33 == i44);
 		Integer i55 = 123;
