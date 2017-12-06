@@ -39,7 +39,7 @@ class Husky implements IWalkable {
 public class InterfaceDemo {
 	public static void main(String args){
 		// Husky h = new Husky(); //不应该用这种方法，应该把实现类对象赋值过来
-		IWalkable h = new Husky();
-		h.walk();
+		IWalkable h = new Husky(); //面向接口编程，存在多态
+		h.walk(); //执行哈士奇的方法
 	}
 }
