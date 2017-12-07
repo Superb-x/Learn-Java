@@ -3,6 +3,7 @@ package demo;
 /*
  * 八大基本数据类型的包装类都使用final修饰，都是最终类，不能被继承
  */
+
 public class IntegerDemo {
 	public static void main(String[] args) {
 		//装箱操作:把一个基本类型的值，转换为对应包装类对象
