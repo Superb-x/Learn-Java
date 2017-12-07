@@ -24,5 +24,6 @@ public class IntegerDemo {
 		int num5 = num4;
 		String str = "123";
 		int num6 = Integer.parseInt(str);
+		System.out.println(num6);
 	}
 }
