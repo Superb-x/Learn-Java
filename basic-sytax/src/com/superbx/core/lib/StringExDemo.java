@@ -5,6 +5,10 @@ public class StringExDemo {
 	public static void main(String[] args) {
 		test1();
 		test2();
+		System.out.println(hasLenght(""));
+		System.out.println(hasLenght(" "));
+		System.out.println(hasLenght(" A "));
+		System.out.println(isBlank(" "));
 	}
 
 	private static void test2() {
@@ -27,4 +31,11 @@ public class StringExDemo {
 		}
 	}
 	
+	private static boolean hasLenght(String str) {
+		return str != null && !"".equals(str.trim()); 
+	}
+	
+	private static boolean isBlank(String str) {
+		return !hasLenght(str);
+	}
 }
