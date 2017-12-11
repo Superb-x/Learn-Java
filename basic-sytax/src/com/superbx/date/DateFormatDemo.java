@@ -25,5 +25,6 @@ public class DateFormatDemo {
 		time = df.format(d);
 		Date d2 = df.parse(time);
 		System.out.println(d2);
+		
 	}
 }
