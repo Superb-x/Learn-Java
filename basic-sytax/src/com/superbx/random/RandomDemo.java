@@ -6,7 +6,7 @@ import java.util.Random;
  */
 public class RandomDemo {
 	public static void main(String[] args) {
-		Random r1 = new Random(10);
+		Random r1 = new Random(10); //如果你传入一个种子的话，生成的结果将会是一样的
 		System.out.println(r1.nextBoolean());
 		System.out.println(r1.nextDouble());
 		System.out.println(r1.nextInt());
