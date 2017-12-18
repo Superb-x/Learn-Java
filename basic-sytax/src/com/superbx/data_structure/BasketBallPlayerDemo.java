@@ -18,6 +18,6 @@ public class BasketBallPlayerDemo {
 		PlayerList.update(22, 222);
 		PlayerList.print();
 		PlayerList.delete(3);
-		PlayerList.print();
+		PlayerList. print();
 	}
 }
