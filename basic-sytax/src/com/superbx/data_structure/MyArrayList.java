@@ -85,7 +85,7 @@ public class MyArrayList {
 		if(size == 0) {
 			return "[]";
 		}
-		StringBuilder sb = new StringBuilder(size * 2 + 1);//我这里只需要存储5个数据
+		StringBuilder sb = new StringBuilder(size * 2 + 1);//存多少就写多少
 		sb.append("[");
 		for(int i = 0;i < size;i++) {
 			sb.append(elements[i]);
