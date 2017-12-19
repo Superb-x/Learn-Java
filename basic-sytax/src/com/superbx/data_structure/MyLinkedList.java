@@ -36,9 +36,9 @@ public class MyLinkedList {
 	public void remove(Object ele){
 		//找到要被删除的节点
 		Node current = this.first;
-		for (int i = 0; i < size; i++) {
+		for (int i = 0; i < size; i++) { //先找到节点
 			if(!current.ele.equals(ele)){
-				if(current.next == null) {
+				if(current.next == null) { //表示最后一个节点
 					return;
 				}
 				current = current.next;
