@@ -3,7 +3,7 @@ package com.superbx.data_structure;
 import java.util.Arrays;
 
 public class MyArrayList {
-	//存储场上球员的球衣号码
+	//存储数据
 	public Object[] elements = null;
 	//场上球员的个数
 	public int size = 0;
@@ -13,14 +13,14 @@ public class MyArrayList {
 		if(initialCapacity < 0) {
 			throw new IllegalArgumentException("容量不能为负数");
 		}
-		elements = new Integer[initialCapacity];
+		elements = new Object[initialCapacity];
 	}
 	//默认构造器，长度为10
 	public MyArrayList(){
 		this(DEFAULT_INITIAL_CAPACITY);
 	}
 	//保存新的元素
-	public void add(Integer ele) {
+	public void add(Object ele) {
 		//判断和扩容
 		if(size == elements.length) {
 			Object[] temp = Arrays.copyOf(elements, elements.length * 2);
@@ -37,7 +37,7 @@ public class MyArrayList {
 		return elements[index];
 	}
 	//根据元素查询索引的位置
-	public int getIndexOfPlayer(Integer ele){
+	public int getIndexOfPlayer(Object ele){
 		for(int i = 0;i < size;i++) {
 			if(elements[i].equals(ele)) {
 				return i;
@@ -78,7 +78,8 @@ public class MyArrayList {
 		elements = null;
 	}
 	
-	public String print() {
+	@Override
+	public String toString() {
 		if(elements == null) {
 			return "null";
 		}
