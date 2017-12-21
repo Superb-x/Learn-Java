@@ -10,3 +10,5 @@ Vector类存储原理：
 			如：v.addElement(Integer.valueOf(123));
 		Java5之后就可以在编译器级别自动装箱
 	3、集合类中存储的对象都是对象的引用，不是对象的本身		
+	
+	Vector的add方法，跟ArrayList方法的区别就是有没有使用synchronized修饰符

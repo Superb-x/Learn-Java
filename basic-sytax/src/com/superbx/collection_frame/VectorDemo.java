@@ -13,5 +13,11 @@ public class VectorDemo {
 		v.addElement(123); //注意这里是不能存储基础类型数据的,这是Java高版本自动装箱了，这只是编译器的语法塘
 		v.addElement(Integer.valueOf(123)); //底层是这样实现的
 		System.out.println(v);
+		StringBuilder sb = new StringBuilder(6);
+		sb.append("LXL");
+		v.addElement(sb);
+		System.out.println(v);
+		sb.append("LYL");
+		System.out.println(v); //只是一个引用关系
 	}
 }
