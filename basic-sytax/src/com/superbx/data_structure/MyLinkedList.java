@@ -2,9 +2,9 @@ package com.superbx.data_structure;
 //基于双向链表的一个集合
 public class MyLinkedList {
 	
-	private Node first;//链表的第一个节点
-	private Node last; //链表的最后一个节点
-	private int size = 0; //节点的数量
+	protected Node first;//链表的第一个节点
+	protected Node last; //链表的最后一个节点
+	protected int size = 0; //节点的数量
 	
 	public void addFirst(Object ele){
 		Node node = new Node(ele);
