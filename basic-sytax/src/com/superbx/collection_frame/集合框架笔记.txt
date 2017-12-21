@@ -1,0 +1,12 @@
+Vector类存储原理：
+	通过源码分析，发现Vector类中有一个Object[]类型数组
+	
+	protected Object[] elementData;
+	
+	1、表面看是把数据存储到Vector对象中，实际上其底层仍然是把数据存储在Object数组中
+	2、我们发现该数组的元素类型是Object类型，意味着集合中只能存储任意类型的对象
+		集合中只能存储对象，不能存储基本数据类型的值
+		在Java5之前，必须对基本数据类型进行装箱操作
+			如：v.addElement(Integer.valueOf(123));
+		Java5之后就可以在编译器级别自动装箱
+	3、集合类中存储的对象都是对象的引用，不是对象的本身		
