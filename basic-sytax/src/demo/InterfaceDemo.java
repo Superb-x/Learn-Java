@@ -29,7 +29,7 @@ class Husky implements IWalkable {
  * 接口不应该有实例
  * 接口存在的成员：
  *  1、接口不应该有构造器，推论：接口不能创建对象，不能用new方法，并且不能定义普通方法
- *  2、接口中定义的成员变量，实质是全局静态常量，默认使用public static final来修饰
+ *  2、接口中定义的成员变量，实质是全局静态常量，默认使用public static final来修饰，如果自己没有定义，编译器也会隐式的去做这个事情
  *     public static final String NAME = "刘祥麟"
  *  3、接口中定义的成员都是公共的抽象方法，默认的修饰符就是public abstract来修饰方法   
  *  4、接口中定义的内部类都是公共的静态内部类
