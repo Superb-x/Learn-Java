@@ -12,3 +12,26 @@ Vector类存储原理：
 	3、集合类中存储的对象都是对象的引用，不是对象的本身		
 	
 	Vector的add方法，跟ArrayList方法的区别就是有没有使用synchronized修饰符
+	
+HashMap和TreeMap以及LinkedHashMap都是线程不安全的
+解决方案：Map m = Collections.synchronizedMap(Map 对象)
+Hashtable类实现线程安全的，但是性能较低
+哈希表算法：做等值查询最快
+树结构算法：做范围查询最快-->应用到索引上
+
+
+选用哪一种容器，取决于每一种容器的存储特点以及当前业务的需求：
+List: 单一元素集合，允许元素重复，并且会记录元素的添加顺序
+
+
+Set: 单一元素集合，不允许重复，不记录元素的添加顺序，既要不重复又要保证顺序，那么就用LinkedHashSet
+
+
+Map: 双元素集合，如果存储数据的时候，还得给书起一个名称，此时考虑用map
+
+---------------------------------------------
+List和Set以及Map之间相互转换的问题
+
+List<String> list = new ArrayList<>();
+
+Set<String> set = new HashSet<>(list); //转换操作会将list中的多余的key删除
