@@ -6,7 +6,7 @@ import java.util.TreeMap;
 /*
  * 计算一个字符串中每一个字符串出现的次数
  */
-public class MapDemp {
+public class MapDemo {
 	public static void main(String[] args) {
 		String str = "dhasdufgeubssbanxbhsaffiehfidjssdwsoxzlmmed";
 		//把字符串转换为char数组，字符串的底层就是char数组
