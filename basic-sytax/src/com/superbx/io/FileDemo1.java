@@ -1,7 +1,9 @@
 package com.superbx.io;
 
 import java.io.File;
-
+/*
+ * 目录分隔符
+ */
 public class FileDemo1 {
 	public static void main(String[] args) {
 		//获取属性分隔符
