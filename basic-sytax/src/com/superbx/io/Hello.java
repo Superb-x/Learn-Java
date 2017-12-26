@@ -1,0 +1,1 @@
+public class Hello{public static void main(String[] args){System.out.println("大渣好，唔系古天乐，唔系渣渣辉，跟我一起贪玩蓝月，卸载算我输");}}
