@@ -45,7 +45,9 @@ class Student{
 	
 	
 }
-
+/*
+ * 需要覆盖hashCode和equals方法
+ */
 public class HashSetDemo {
 	public static void main(String[] args) {
 		Set set = new HashSet<>();
