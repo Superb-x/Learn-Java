@@ -28,10 +28,8 @@ public class NodeStreamVSBufferedStreamDemo {
 	private static void test4(File f) throws Exception {
 		File f2 = new File("C:/IOtest/node/buffer.mp4");
 		long time1 = System.currentTimeMillis();
-		BufferedInputStream in = new BufferedInputStream(
-				new FileInputStream(f));
-		BufferedOutputStream out = new BufferedOutputStream(
-				new FileOutputStream(f2));
+		BufferedInputStream in = new BufferedInputStream(new FileInputStream(f));
+		BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream(f2));
 		byte[] buffer = new byte[1024];
 		int len = -1;
 		while ((len = in.read(buffer)) != -1) {
@@ -48,10 +46,8 @@ public class NodeStreamVSBufferedStreamDemo {
 	private static void test3(File f) throws Exception {
 		File f2 = new File("C:/IOtest/node/bufferin.mp4");
 		long time1 = System.currentTimeMillis();
-		BufferedInputStream in = new BufferedInputStream(
-				new FileInputStream(f));
-		BufferedOutputStream out = new BufferedOutputStream(
-				new FileOutputStream(f2));
+		BufferedInputStream in = new BufferedInputStream(new FileInputStream(f));
+		BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream(f2));
 		int len = -1;
 		while ((len = in.read()) != -1) {
 			out.write(len);
