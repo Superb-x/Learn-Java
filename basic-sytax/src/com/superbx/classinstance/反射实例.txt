@@ -1,2 +1,9 @@
 Java的基本数据类型：byte,short,long,int,double,float,char,boolean,void;
 九大内置实例：byte.class,short.class,long,int,double,float,char,boolean....,void.class
+
+构造器最大的作用就是创建对象
+1、为什么使用反射来创建对象？
+答：因为在框架中提供的都是字符串
+
+
+使用反射获取类中的方法：
