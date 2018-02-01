@@ -10,5 +10,5 @@ public interface IAquaticAnimal {
 	
 	default void breathInWater(){ //默认的方法
 		System.out.println("brearh in water");
-	};
+	}
 }
